@@ -1,0 +1,40 @@
+/*--------------Colors-------------*/
+:root{
+  --color-primary:#edf5f6;
+  --color-primary-dark:#089bab;
+  --color-primary-light:#ffffff;
+
+  --color-grey-light:#B5B7B7;
+  --color-grey-dark:#585858;
+      
+  --color-orange:#FF8A47;
+  --color-red:#DE6262;
+  --color-yellow:#d4af37;
+}
+
+/*--------------Base-------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+html{
+  box-sizing: border-box;
+  font-size: 62.5%; 
+  background-color: var(--color-primary);
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-grey-dark);
+  min-height:100vh;
+}
