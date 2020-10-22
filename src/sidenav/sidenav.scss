@@ -1,0 +1,93 @@
+.sidebar {
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 18.5rem;
+    justify-content: space-between;
+    background-color: var(--color-primary-dark);
+    // box-shadow: 0.2rem 0 0.3rem rgba(0, 0, 0, 0.2);
+}
+
+hr {
+    width: 12rem;
+    margin: 10rem 0px -1.8rem 3rem;
+}
+
+.side-nav {
+    list-style: none;
+    &__item {
+        position: relative;
+        padding: 0.8rem;
+        border-radius: 2.5rem 0 0 2.5rem;
+        display: flex;
+        flex-direction: row;
+        flex: 1 0 20rem;
+        margin: 3.5rem 0 3.5rem 3.5rem;
+
+        &:hover {
+            background-color: var(--color-primary);
+            // fill: var(--color-primary);
+            color: var(--color-primary-dark);
+            margin: 3.5rem 0 3.5rem 3.5rem;
+        }
+
+        &:hover:after,
+        &:hover:before {
+            content: "";
+            position: absolute;
+            width: 1rem;
+            height: 1rem;
+            right: 0rem;
+        }
+        &:hover::after {
+            top: -10px;
+            background: radial-gradient(
+                circle at top left,
+                var(--color-primary-dark) 10px,
+                var(--color-primary) 11px
+            );
+        }
+
+        &:hover::before {
+            bottom: -10px;
+            background: radial-gradient(
+                circle at bottom left,
+                var(--color-primary-dark) 10px,
+                var(--color-primary) 11px
+            );
+        }
+        &:first-child {
+            margin-top: 11.5rem;
+        }
+
+        &:last-child {
+            margin-bottom: 16rem;
+        }
+    }
+    &__item:hover > &__link > &__icon {
+        width: 1.8rem;
+        height: 1.8rem;
+        fill: var(--color-primary-dark);
+    }
+    &__item:hover > &__link {
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: var(--color-primary-dark);
+    }
+    &__icon {
+        fill: var(--color-primary-light);
+        position: relative;
+        left: 1px;
+        width: 1.7rem;
+        height: 1.7rem;
+        margin-right: 0.5rem;
+        top: 3.5px;
+    }
+    &__link:link,
+    &__link:visited {
+        font-size: 1.4rem;
+        font-weight: 200;
+        text-decoration: none;
+        color: var(--color-primary-light);
+    }
+}

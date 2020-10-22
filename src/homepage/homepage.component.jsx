@@ -1,18 +1,11 @@
 import React from 'react';
-
+ import SideNav from '../sidenav/sidenav.component';
 import './homepage.scss';
 
 const Homepage = () => {
     return (
         <div className="homepage">
-            <aside className="sidebar">
-                <ul>
-                    <li>Home</li>
-                    <li>Contact</li>
-                    <li>Dashboard</li>
-                    <li>Settings</li>
-                </ul>
-            </aside>
+            <SideNav/>
             <main className="mainPage"></main>
         </div>
     );

@@ -3,16 +3,6 @@
     position: relative;
     top: -10rem;
 
-    .sidebar{
-         top: 0;
-         padding-top: 40rem;      
-         display: flex;
-         flex-direction: column;
-         flex: 0 0 13%;
-         height: 70%;
-        //  border-radius: 0 3rem 0 0;
-         background-color: var(--color-primary-dark);
-    }
     
     .mainpage{
         display: flex;
